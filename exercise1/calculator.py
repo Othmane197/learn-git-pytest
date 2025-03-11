@@ -54,22 +54,12 @@ def multiply(a: Number, b: Number) -> Number:
 
 
 def divide(a: Number, b: Number) -> Number:
-    """
-    Return the result of dividing a by b.
-
-    Args:
-        a: First number (dividend)
-        b: Second number (divisor)
-
-    Returns:
-        The result of a / b
-
-    Raises:
-        ValueError: If b is 0
-    """
-    if b==0:
-        raise ValueError("Invalid input!")
-    else:
-        return a/b
-    # TODO: Implement this function
-    pass
+        """
+        Return the result of dividing a by b.
+        """
+        if b == 0:
+            raise ValueError("Cannot divide by zero")
+        else:
+            return a / b
+        # TODO: Implement this function
+        pass
